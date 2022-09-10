@@ -7,5 +7,5 @@ workflows:
   maven_test:
     jobs:
       - maven/test: # checkout, build, test, and upload test results
-          app_src_directory: test
-          test_results_path: test/target/surefire-reports
+          app_src_directory: master
+          test_results_path: master/target/surefire-reports
