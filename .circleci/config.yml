@@ -1,6 +1,8 @@
-version: 1.0
+version: 2.0
+
 jobs:
   say-hello:
+    docker: cimg/base:stable
     steps:
       - checkout
       - run:
