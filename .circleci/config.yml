@@ -8,6 +8,6 @@ workflows:
   maven_test:
     jobs:
       - maven/test: # checkout, build, test, and upload test results
-          command: "clean install"
+          command: "clean install -DskipTests"
           app_src_directory: .
           test_results_path: ./target/surefire-reports
